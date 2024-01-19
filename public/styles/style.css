@@ -1,0 +1,13 @@
+/* Para navegadores baseados no Chromium */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+/* Para navegadores não baseados no Chromium*/
+input[type="password"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+input[type="password"]::-moz-reveal {
+  display: none;
+}
