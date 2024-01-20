@@ -2,10 +2,10 @@
 <html lang="pt-br">
 
 <head>
-	<!-- Lembrar de preencher os campos content -->
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="description" content="Adicionar descrição" />
+	<meta name="description"
+		content="Confira meu clone do Netflix, um dos maiores e melhores serviços de streamings." />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<meta name="author" content="Samuel da Silva" />
 	<meta property="og:title" content="Netflix Clone" />
@@ -22,8 +22,6 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
 		integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<!-- Adicionar link da página no href abaixo, como url canonical -->
-	<link rel="canonical" href="" />
 	<link rel="stylesheet" href="./styles/output.css" />
 	<link rel="apple-touch-icon" href="./images/favicon.ico">
 	<link rel="manifest" href="./images/favicon.png">
@@ -34,16 +32,10 @@
 	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 	<title>Netflix</title>
-	<script type="module" src="./scripts/jquery-3.7.1.min.js"></script>
-	<script type="module" src="./scripts/dom.js"></script>
-	<script type="module" src="./scripts/read-more.js"></script>
-	<script type="module" src="./scripts/footer.js"></script>
-	<script type="module" src="./scripts/form.js"></script>
-	<script type="module" src="./scripts/main.js"></script>
 </head>
 
 <body
-	class="bg-black h-screen shrink min-w-96 flex flex-col justify-between items-center before:bg-banner before:bg-cover before:fixed before:top-0 before:right-0 before:left-0 before:bottom-0 before:-z-20 after:bg-black/70 after:fixed after:top-0 after:right-0 after:left-0 after:bottom-0 after:-z-10">
+	class="bg-black h-screen shrink min-w-80 flex flex-col justify-between items-center before:bg-banner before:bg-cover before:fixed before:top-0 before:right-0 before:left-0 before:bottom-0 before:-z-20 after:bg-black/70 after:fixed after:top-0 after:right-0 after:left-0 after:bottom-0 after:-z-10">
 
 	<!-- Logo tipográfico do streaming Netflix -->
 	<header class="p-3 self-start z-0">
@@ -72,10 +64,10 @@
 				<!-- User -->
 				<div class="relative *:px-4">
 					<input type="text" name="userLoginId" id="userLoginId"
-						class="peer focus:ring-zinc-400 focus:ring-1 focus:outline-none bg-zinc-800 w-full rounded-md py-3 text-sm leading-6"
+						class="peer focus:ring-zinc-400 focus:ring-1 focus:outline-none bg-zinc-800 w-full rounded-md h-12 text-sm"
 						required>
 					<label for="userLoginId"
-						class="absolute top-0 left-0 translate-y-1/2 select-none duration-500 transition-all peer-focus:text-xs peer-focus:text-zinc-400 peer-focus:translate-y-0 peer-[.has-content]:text-xs peer-[.has-content]:translate-y-0 peer-[.has-content]:text-zinc-400 sm:text-sm sm:leading-6 md:text-md md:leading-6"
+						class="absolute top-0 left-0 translate-y-1/2 select-none duration-500 transition-all peer-focus:text-xs peer-focus:text-zinc-400 peer-focus:translate-y-0 peer-[.has-content]:text-xs peer-[.has-content]:translate-y-0 peer-[.has-content]:text-zinc-400 sm:text-sm sm:leading-6"
 						id="label_userLoginId">Email ou número de telefone
 					</label>
 					<notice class="hidden text-xs text-orange-400" id="notice-user">Informe um email ou número de
@@ -85,17 +77,18 @@
 				<!-- Password -->
 				<div class="relative *:px-4" id="div-password">
 					<input type="password" name="userPassword" id="userPassword" minlength="8"
-						class="peer/password focus:ring-zinc-400 focus:ring-1 focus:outline-none bg-zinc-800 w-full rounded-md py-3 text-sm leading-6"
+						class="peer/password focus:ring-zinc-400 focus:ring-1 focus:outline-none bg-zinc-800 w-full rounded-md h-12 text-sm"
 						required>
 					<label for="userPassword"
-						class="absolute top-0 left-0 translate-y-1/2 select-none duration-500 transition-all peer-focus/password:text-xs peer-focus/password:text-zinc-400 peer-focus/password:translate-y-0 peer-[.has-content]/password:text-xs peer-[.has-content]/password:translate-y-0 peer-[.has-content]/password:text-zinc-400 sm:text-sm sm:leading-6 md:text-md md:leading-6"
+						class="absolute top-0 left-0 translate-y-1/2 select-none duration-500 transition-all peer-focus/password:text-xs peer-focus/password:text-zinc-400 peer-focus/password:translate-y-0 peer-[.has-content]/password:text-xs peer-[.has-content]/password:translate-y-0 peer-[.has-content]/password:text-zinc-400 sm:text-sm sm:leading-6"
 						id="label_userLoginId">Senha
 					</label>
 					<view id="show-view"
-						class="hidden absolute top-0 right-0 translate-y-1/2 text-zinc-400 cursor-pointer">Mostrar
+						class="hidden absolute top-0 right-0 translate-y-1/2 text-zinc-400 cursor-pointer sm:text-sm sm:leading-6">
+						Mostrar
 					</view>
-					<notice class="hidden text-xs text-orange-400" id="notice-password">A senha deve ter entre 4 e
-						60 caracteres.</notice>
+					<notice class="hidden text-xs text-orange-400" id="notice-password">A senha deve ter entre 4 e 60
+						caracteres.</notice>
 				</div>
 				<!-- /Password -->
 			</section>
@@ -193,6 +186,15 @@
 		<p class="text-center py-4">© 2024 Netflix. Regulated by the MIT License.</p>
 		<!-- /Copyright -->
 	</footer>
+
+	<!-- Scripts -->
+	<script type="module" src="./scripts/jquery-3.7.1.min.js"></script>
+	<script type="module" src="./scripts/dom.js"></script>
+	<script type="module" src="./scripts/read-more.js"></script>
+	<script type="module" src="./scripts/footer.js"></script>
+	<script type="module" src="./scripts/form.js"></script>
+	<script type="module" src="./scripts/main.js"></script>
+	<!-- /Scripts -->
 </body>
 
 </html>

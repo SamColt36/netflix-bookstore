@@ -612,6 +612,10 @@ video {
   height: 100vh;
 }
 
+.h-1\/2 {
+  height: 50%;
+}
+
 .w-10\/12 {
   width: 83.333333%;
 }
@@ -626,10 +630,6 @@ video {
 
 .min-w-96 {
   min-width: 24rem;
-}
-
-.min-w-72 {
-  min-width: 18rem;
 }
 
 .min-w-80 {
@@ -871,6 +871,11 @@ video {
 .\*\:px-4 > * {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.\*\:py-3 > * {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .before\:fixed::before {
