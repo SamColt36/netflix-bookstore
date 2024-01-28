@@ -15,7 +15,8 @@ export const theme = {
       // => @media and (min-width: 300px) and (max-width: 425px)
     },
     backgroundImage: {
-      banner: "url('../images/banner.png')"
+      banner: "url('../images/banner.png')",
+      "banner-mobile": "url('../images/banner-mobile.png')"
     },
     colors: {
       "red-submit": "#e50914",
