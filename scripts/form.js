@@ -76,14 +76,8 @@ const showHideButton = function (input, element) {
 
 const allFieldsValidated = function (objLogin, objPassword, objSubmit) {
   objLogin.hasClass("is-valid") && objPassword.hasClass("is-valid")
-    ? objSubmit
-        .removeClass("cursor-no-drop text-white/50 bg-var-primary/50")
-        .addClass("cursor-pointer text-white bg-var-primary")
-        .attr("disabled", false)
-    : objSubmit
-        .addClass("cursor-no-drop text-white/50 bg-var-primary/50")
-        .removeClass("cursor-pointer text-white bg-var-primary")
-        .attr("disabled", "disabled");
+    ? objSubmit.attr("disabled", false)
+    : objSubmit.attr("disabled", "disabled");
 };
 
 export {
