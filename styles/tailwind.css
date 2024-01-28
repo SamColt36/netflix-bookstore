@@ -886,6 +886,11 @@ video {
   z-index: -20;
 }
 
+.before\:h-screen::before {
+  content: var(--tw-content);
+  height: 100vh;
+}
+
 .before\:bg-banner::before {
   content: var(--tw-content);
   background-image: url('../images/banner.png');
