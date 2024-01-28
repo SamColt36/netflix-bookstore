@@ -18,8 +18,8 @@ export const theme = {
       banner: "url('../images/banner.png')"
     },
     colors: {
-      "red-submit": "#e50914",
-      "red-error": "#ff0000",
+      "var-primary": "#e50914", //red
+      "var-secondary": "#000000", //black
       link: "#0080ff"
     }
   }
