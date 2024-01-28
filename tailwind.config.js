@@ -19,8 +19,8 @@ export const theme = {
       "banner-mobile": "url('../images/banner-mobile.png')"
     },
     colors: {
-      "red-submit": "#e50914",
-      "red-error": "#ff0000",
+      "var-primary": "#e50914", //red
+      "var-secondary": "#000000", //black
       link: "#0080ff"
     }
   }

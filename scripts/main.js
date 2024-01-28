@@ -13,7 +13,8 @@ import {
 import {
   checkContentLogin,
   checkContentPassword,
-  showHideButton
+  showHideButton,
+  allFieldsValidated
 } from "./form.js";
 
 readMore();
@@ -21,11 +22,13 @@ addLinks();
 
 $input_login.on("input", function (e) {
   checkContentLogin(this, $noticeUser);
+  allFieldsValidated($(this), $input_password, $input_submit);
   e.preventDefault();
 });
 
 $input_password.on("input", function (e) {
   checkContentPassword(this, $noticePassword);
+  allFieldsValidated($(this), $input_password, $input_submit);
   e.preventDefault();
 });
 
@@ -46,13 +49,7 @@ $showView.on("click", function (e) {
 });
 
 $input_submit.click(function (e) {
-  if (
-    $input_login.hasClass("is-valid") &&
-    $input_password.hasClass("is-valid")
-  ) {
-    console.log("campos validados");
-  } else {
-    console.log("campos invalidos");
-  }
+  console.log("click");
+  // AQUI HAVERÁ UMA LÓGICA P/ REDIRECIONAMENTO
   e.preventDefault();
 });

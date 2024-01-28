@@ -3,7 +3,7 @@
 import { $saibaMais, $information } from "./dom.js";
 
 const readMore = () => {
-  $saibaMais.click(e => {
+  $saibaMais.click((e) => {
     setTimeout(() => {
       $(e.target).remove();
       $information.fadeIn();
