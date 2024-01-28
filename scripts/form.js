@@ -77,7 +77,7 @@ const showHideButton = function (input, element) {
 const allFieldsValidated = function (objLogin, objPassword, objSubmit) {
   objLogin.hasClass("is-valid") && objPassword.hasClass("is-valid")
     ? objSubmit.attr("disabled", false)
-    : objSubmit.attr("disabled", "disabled");
+    : objSubmit.attr("disabled", true);
 };
 
 export {
