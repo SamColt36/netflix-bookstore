@@ -1,5 +1,14 @@
 "use strict";
 
+import {
+  $input_password,
+  $input_login,
+  $input_submit,
+  $showView,
+  $noticeUser,
+  $noticePassword
+} from "./dom.js";
+
 const removeErrorInput = (
   input,
   notice,
@@ -32,6 +41,7 @@ const checkContentLogin = function (input, notice) {
   value.length > 0 ? withContent(input) : withoutContent(input);
   /^\d+$/.test(value) ? testNumber() : testEmail();
 
+
   function testNumber() {
     if (/^\d{11}$/.test(value)) {
       removeErrorInput(input, notice);
@@ -56,15 +66,13 @@ const checkContentLogin = function (input, notice) {
 const checkContentPassword = function (input, notice) {
   const value = $(input).val().length;
   if (value === 0) {
-    $(input).removeClass("is-valid");
     withoutContent(input);
     addErrorInput(input, notice);
   } else if (value > 0 && value < 4) {
-    $(input).removeClass("is-valid");
     withContent(input);
+    $(input).addClass("is-valid");
     addErrorInput(input, notice);
   } else {
-    $(input).addClass("is-valid");
     withContent(input);
     removeErrorInput(input, notice);
   }
@@ -74,21 +82,4 @@ const showHideButton = function (input, element) {
   $(input).val().trim().length > 0 ? element.fadeIn() : element.fadeIn();
 };
 
-const allFieldsValidated = function (objLogin, objPassword, objSubmit) {
-  objLogin.hasClass("is-valid") && objPassword.hasClass("is-valid")
-    ? objSubmit
-        .removeClass("cursor-no-drop text-white/50 bg-var-primary/50")
-        .addClass("cursor-pointer text-white bg-var-primary")
-        .attr("disabled", false)
-    : objSubmit
-        .addClass("cursor-no-drop text-white/50 bg-var-primary/50")
-        .removeClass("cursor-pointer text-white bg-var-primary")
-        .attr("disabled", "disabled");
-};
-
-export {
-  checkContentLogin,
-  checkContentPassword,
-  showHideButton,
-  allFieldsValidated
-};
+export { checkContentLogin, checkContentPassword, showHideButton };

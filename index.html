@@ -31,17 +31,11 @@
 		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 	<link rel="stylesheet"
 		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-	<script type="module" src="./scripts/jquery-3.7.1.min.js"></script>
-	<script type="module" src="./scripts/dom.js"></script>
-	<script type="module" src="./scripts/read-more.js"></script>
-	<script type="module" src="./scripts/footer.js"></script>
-	<script type="module" src="./scripts/form.js"></script>
-	<script type="module" src="./scripts/main.js"></script>
 	<title>Netflix</title>
 </head>
 
 <body
-	class="bg-var-secondary h-screen shrink min-w-80 flex flex-col justify-between items-center before:bg-banner before:bg-cover before:fixed before:top-0 before:right-0 before:left-0 before:bottom-0 before:-z-20 after:bg-var-secondary/70 after:fixed after:top-0 after:right-0 after:left-0 after:bottom-0 after:-z-10">
+	class="bg-black h-screen shrink min-w-80 flex flex-col justify-between items-center before:bg-banner before:bg-cover before:fixed before:top-0 before:right-0 before:left-0 before:bottom-0 before:-z-20 after:bg-black/70 after:fixed after:top-0 after:right-0 after:left-0 after:bottom-0 after:-z-10">
 
 	<!-- Logo tipográfico do streaming Netflix -->
 	<header class="p-3 self-start z-0">
@@ -56,7 +50,7 @@
 	</header>
 	<!-- /Logo tipográfico do streaming Netflix -->
 
-	<main class="bg-var-secondary/85 w-10/12 p-6 z-0 space-y-8 max-w-96">
+	<main class="bg-black/85 w-10/12 p-6 z-0 space-y-8 max-w-96">
 		<!-- Entrar -->
 		<header>
 			<h1 class="text-white text-3xl font-medium">Entrar</h1>
@@ -103,8 +97,8 @@
 			<!-- Submit  -->
 			<section>
 				<!-- Input submit -->
-				<input type="submit" value="Entrar" id="submit" disabled
-					class="bg-var-primary/50 cursor-no-drop w-full rounded-md h-12 py-2 px-4 text-white/50 font-medium text-sm">
+				<input type="submit" value="Entrar" id="submit"
+					class="bg-red-submit cursor-pointer w-full rounded-md h-12 py-2 px-4 text-white font-medium text-sm">
 				<!-- /Input submit -->
 				<div class="text-zinc-400 flex justify-between text-xs items-center py-4">
 					<div class="flex space-x-2">
@@ -116,7 +110,7 @@
 								<input type="checkbox" id="checkbox_2"
 									class="peer row-start-1 col-start-1 appearance-none w-4 h-4 border ring-transparent border-slate-300 rounded  checked:bg-zinc-400 checked:border-zinc-400 forced-colors:appearance-auto">
 								<svg viewBox="0 0 14 14" fill="none"
-									class="invisible peer-checked:visible row-start-1 col-start-1 stroke-var-secondary/85 forced-colors:hidden">
+									class="invisible peer-checked:visible row-start-1 col-start-1 stroke-black/85 forced-colors:hidden">
 									<path d="M3 8L6 11L11 3.5" stroke-width="2" stroke-linecap="round"
 										stroke-linejoin="round"></path>
 								</svg>
@@ -158,7 +152,7 @@
 		</section>
 	</main>
 
-	<footer class="bg-var-secondary/85 w-full mt-12 p-6 text-zinc-600 text-xs space-y-6 lg:text-base xl:text-base">
+	<footer class="bg-black/85 w-full mt-12 p-6 text-zinc-600 text-xs space-y-6 lg:text-base xl:text-base">
 		<header class="text-sm lg:text-base xl:text-base">
 			<p>Dúvidas? Ligue <a href="tel:0800 591 2876" target="_blank"
 					class="hover:decoration-inherit hover:underline hover:decoration-1">0800 591 2876</a>
@@ -192,6 +186,15 @@
 		<p class="text-center py-4">© 2024 Netflix. Regulated by the MIT License.</p>
 		<!-- /Copyright -->
 	</footer>
+
+	<!-- Scripts -->
+	<script type="module" src="./scripts/jquery-3.7.1.min.js"></script>
+	<script type="module" src="./scripts/dom.js"></script>
+	<script type="module" src="./scripts/read-more.js"></script>
+	<script type="module" src="./scripts/footer.js"></script>
+	<script type="module" src="./scripts/form.js"></script>
+	<script type="module" src="./scripts/main.js"></script>
+	<!-- /Scripts -->
 </body>
 
 </html>
