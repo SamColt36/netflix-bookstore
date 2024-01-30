@@ -41,10 +41,10 @@
 </head>
 
 <body
-	class="bg-var-secondary h-screen shrink min-w-80 flex flex-col justify-between items-center before:h-screen before:bg-banner before:bg-cover before:fixed before:top-0 before:right-0 before:left-0 before:bottom-0 before:-z-20 after:bg-var-secondary/70 after:fixed after:top-0 after:right-0 after:left-0 after:bottom-0 after:-z-10 sm:before-banner-mobile md:before-banner-mobile">
+	class="flex flex-col items-center justify-between h-screen bg-var-secondary shrink min-w-80 before:h-screen before:bg-banner before:bg-cover before:fixed before:top-0 before:right-0 before:left-0 before:bottom-0 before:-z-20 after:bg-var-secondary/70 after:fixed after:top-0 after:right-0 after:left-0 after:bottom-0 after:-z-10 sm:before-banner-mobile md:before-banner-mobile">
 
 	<!-- Logo tipográfico do streaming Netflix -->
-	<header class="p-3 self-start z-0">
+	<header class="z-0 self-start p-3">
 		<figure>
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 309 83" fill="none" class="h-8"
 				alt="Logo tipográfico do streaming Netflix">
@@ -56,21 +56,21 @@
 	</header>
 	<!-- /Logo tipográfico do streaming Netflix -->
 
-	<main class="bg-var-secondary/85 w-10/12 p-6 z-0 space-y-8 max-w-96">
+	<main class="z-0 w-10/12 p-6 space-y-8 bg-var-secondary/85 max-w-96">
 		<!-- Entrar -->
 		<header>
-			<h1 class="text-white text-3xl font-medium">Entrar</h1>
+			<h1 class="text-3xl font-medium text-white">Entrar</h1>
 		</header>
 		<!-- /Entrar -->
 
 		<!-- Formulário -->
 		<form class="w-full space-y-8" autocomplete="off" method="POST">
 			<!-- Campos de entrada -->
-			<section class="text-white space-y-4">
+			<section class="space-y-4 text-white">
 				<!-- User -->
 				<div class="relative *:px-4">
 					<input type="text" name="userLoginId" id="userLoginId"
-						class="peer focus:ring-zinc-400 focus:ring-1 focus:outline-none bg-zinc-800 w-full rounded-md h-12 text-sm"
+						class="w-full h-12 text-sm rounded-md peer focus:ring-zinc-400 focus:ring-1 focus:outline-none bg-zinc-800"
 						required>
 					<label for="userLoginId"
 						class="absolute top-0 left-0 translate-y-1/2 select-none duration-500 transition-all peer-focus:text-xs peer-focus:text-zinc-400 peer-focus:translate-y-0 peer-[.has-content]:text-xs peer-[.has-content]:translate-y-0 peer-[.has-content]:text-zinc-400 sm:text-sm sm:leading-6"
@@ -83,14 +83,14 @@
 				<!-- Password -->
 				<div class="relative *:px-4" id="div-password">
 					<input type="password" name="userPassword" id="userPassword" minlength="8"
-						class="peer/password focus:ring-zinc-400 focus:ring-1 focus:outline-none bg-zinc-800 w-full rounded-md h-12 text-sm"
+						class="w-full h-12 text-sm rounded-md peer/password focus:ring-zinc-400 focus:ring-1 focus:outline-none bg-zinc-800"
 						required>
 					<label for="userPassword"
 						class="absolute top-0 left-0 translate-y-1/2 select-none duration-500 transition-all peer-focus/password:text-xs peer-focus/password:text-zinc-400 peer-focus/password:translate-y-0 peer-[.has-content]/password:text-xs peer-[.has-content]/password:translate-y-0 peer-[.has-content]/password:text-zinc-400 sm:text-sm sm:leading-6"
 						id="label_userLoginId">Senha
 					</label>
 					<view id="show-view"
-						class="hidden absolute top-0 right-0 translate-y-1/2 text-zinc-400 cursor-pointer sm:text-sm sm:leading-6">
+						class="absolute top-0 right-0 hidden translate-y-1/2 cursor-pointer text-zinc-400 sm:text-sm sm:leading-6">
 						Mostrar
 					</view>
 					<notice class="hidden text-xs text-orange-400" id="notice-password">A senha deve ter entre 4 e 60
@@ -104,19 +104,19 @@
 			<section>
 				<!-- Input submit -->
 				<input type="submit" value="Entrar" id="submit" disabled
-					class="disabled:bg-var-primary/50 disabled:cursor-no-drop w-full rounded-md h-12 py-2 px-4 disabled:text-white/50 font-medium text-sm cursor-pointer bg-var-primary text-white">
+					class="w-full h-12 px-4 py-2 text-sm font-medium text-white rounded-md cursor-pointer disabled:bg-var-primary/50 disabled:cursor-no-drop disabled:text-white/50 bg-var-primary">
 				<!-- /Input submit -->
-				<div class="text-zinc-400 flex justify-between text-xs items-center py-4">
+				<div class="flex items-center justify-between py-4 text-xs text-zinc-400">
 					<div class="flex space-x-2">
 						<!-- Componente checkbox -->
 						<label for="checkbox_2"
-							class="select-none grid grid-flow-col gap-3 items-center cursor-pointer">
+							class="grid items-center grid-flow-col gap-3 cursor-pointer select-none">
 							<!-- Checkbox -->
 							<div class="grid items-center justify-center">
 								<input type="checkbox" id="checkbox_2"
-									class="peer row-start-1 col-start-1 appearance-none w-4 h-4 border ring-transparent border-slate-300 rounded  checked:bg-zinc-400 checked:border-zinc-400 forced-colors:appearance-auto">
+									class="w-4 h-4 col-start-1 row-start-1 border rounded appearance-none peer ring-transparent border-slate-300 checked:bg-zinc-400 checked:border-zinc-400 forced-colors:appearance-auto">
 								<svg viewBox="0 0 14 14" fill="none"
-									class="invisible peer-checked:visible row-start-1 col-start-1 stroke-var-secondary/85 forced-colors:hidden">
+									class="invisible col-start-1 row-start-1 peer-checked:visible stroke-var-secondary/85 forced-colors:hidden">
 									<path d="M3 8L6 11L11 3.5" stroke-width="2" stroke-linecap="round"
 										stroke-linejoin="round"></path>
 								</svg>
@@ -138,12 +138,12 @@
 		</form>
 		<!-- /Formulário -->
 
-		<section class="text-zinc-500 text-xs space-y-4">
-			<p class="text-zinc-600 text-sm">Novo por aqui? <a href="https://www.netflix.com/" rel="noopener noreferrer"
+		<section class="space-y-4 text-xs text-zinc-500">
+			<p class="text-sm text-zinc-600">Novo por aqui? <a href="https://www.netflix.com/" rel="noopener noreferrer"
 					class="text-white hover:decoration-white hover:underline hover:decoration-1">Assine agora</a>.
 			</p>
 			<p>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <span
-					class="text-link cursor-pointer" id="saiba-mais">Saiba
+					class="cursor-pointer text-link" id="saiba-mais">Saiba
 					mais.</span>
 			</p>
 			<p class="hidden" id="information">As informações recolhidas pelo Google reCAPTCHA estão sujeitas à <a
@@ -158,7 +158,7 @@
 		</section>
 	</main>
 
-	<footer class="bg-var-secondary/85 w-full mt-12 p-6 text-zinc-600 text-xs space-y-6 lg:text-base xl:text-base">
+	<footer class="w-full p-6 mt-12 space-y-6 text-xs bg-var-secondary/85 text-zinc-600 lg:text-base xl:text-base">
 		<header class="text-sm lg:text-base xl:text-base">
 			<p>Dúvidas? Ligue <a href="tel:0800 591 2876" target="_blank"
 					class="hover:decoration-inherit hover:underline hover:decoration-1">0800 591 2876</a>
@@ -166,30 +166,30 @@
 		</header>
 
 		<!-- Links -->
-		<ul id="listFooter" class="grid grid-cols-3 grid-rows-2 justify-center items-center gap-1">
-			<li class="hover:decoration-inherit hover:underline hover:decoration-1 cursor-pointer">
+		<ul id="listFooter" class="grid items-center justify-center grid-cols-3 grid-rows-2 gap-1">
+			<li class="cursor-pointer hover:decoration-inherit hover:underline hover:decoration-1">
 				<a href="">Perguntas frequentes</a>
 			</li>
-			<li class="hover:decoration-inherit hover:underline hover:decoration-1 cursor-pointer">
+			<li class="cursor-pointer hover:decoration-inherit hover:underline hover:decoration-1">
 				<a href="">Central de Ajuda</a>
 			</li>
-			<li class="hover:decoration-inherit hover:underline hover:decoration-1 cursor-pointer">
+			<li class="cursor-pointer hover:decoration-inherit hover:underline hover:decoration-1">
 				<a href="">Termos de Uso</a>
 			</li>
-			<li class="hover:decoration-inherit hover:underline hover:decoration-1 cursor-pointer">
+			<li class="cursor-pointer hover:decoration-inherit hover:underline hover:decoration-1">
 				<a href="">Privacidade</a>
 			</li>
-			<li class="hover:decoration-inherit hover:underline hover:decoration-1 cursor-pointer">
+			<li class="cursor-pointer hover:decoration-inherit hover:underline hover:decoration-1">
 				<a href="">Preferências de cookies</a>
 			</li>
-			<li class="hover:decoration-inherit hover:underline hover:decoration-1 cursor-pointer">
+			<li class="cursor-pointer hover:decoration-inherit hover:underline hover:decoration-1">
 				<a href="">Informações corporativas</a>
 			</li>
 		</ul>
 		<!-- /Links -->
 
 		<!-- Copyright -->
-		<p class="text-center py-4">© 2024 Netflix. Regulated by the MIT License.</p>
+		<p class="py-4 text-center">© 2024 Netflix. Regulated by the MIT License.</p>
 		<!-- /Copyright -->
 	</footer>
 </body>
