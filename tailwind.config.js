@@ -11,18 +11,18 @@ export const theme = {
       // => @media and (min-width: 768px) and (max-width: 1023px)
       md: { min: "426px", max: "767px" },
       // => @media and (min-width: 426px) and (max-width: 767px)
-      sm: { min: "300px", max: "425px" }
+      sm: { min: "300px", max: "425px" },
       // => @media and (min-width: 300px) and (max-width: 425px)
     },
     backgroundImage: {
       banner: "url('../images/banner.png')",
-      "banner-mobile": "url('../images/banner-mobile.png')"
+      "banner-mobile": "url('../images/banner-mobile.png')",
     },
     colors: {
       "var-primary": "#e50914", //red
       "var-secondary": "#000000", //black
-      link: "#0080ff"
-    }
-  }
+      link: "#0080ff",
+    },
+  },
 };
 export const plugins = [];
