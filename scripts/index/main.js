@@ -49,6 +49,6 @@ $showView.on("click", function (e) {
 });
 
 $input_submit.click(function (e) {
-  window.location.href = "../browse.html";
+  window.location.href = "browse.html";
   e.preventDefault();
 });
