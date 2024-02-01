@@ -8,13 +8,13 @@ import {
   $input_submit,
   $showView,
   $noticeUser,
-  $noticePassword
+  $noticePassword,
 } from "./dom.js";
 import {
   checkContentLogin,
   checkContentPassword,
   showHideButton,
-  allFieldsValidated
+  allFieldsValidated,
 } from "./form.js";
 
 readMore();
@@ -49,7 +49,6 @@ $showView.on("click", function (e) {
 });
 
 $input_submit.click(function (e) {
-  console.log("click");
-  // AQUI HAVERÁ UMA LÓGICA P/ REDIRECIONAMENTO
+  window.location.href = "../../browse.html";
   e.preventDefault();
 });

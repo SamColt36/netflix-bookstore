@@ -11,3 +11,10 @@ input[type="password"] {
 input[type="password"]::-moz-reveal {
   display: none;
 }
+@font-face {
+  font-family: "Netflix";
+  src: url("../fonts/netflixsans-regular.ttf") format("truetype");
+}
+.netflix-sans {
+  font-family: "Netflix", sans-serif;
+}

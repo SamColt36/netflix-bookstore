@@ -1,0 +1,78 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description"
+        content="Confira o Netflix Bookstore, a nova aposta da streaming para o segmento de Livraria Online" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="author" content="Samuel da Silva" />
+    <meta property="og:title" content="Netflix Bookstore - livraria online" />
+    <meta property="og:description"
+        content="Confira o Netflix Bookstore, a nova aposta da streaming para o segmento de Livraria Online" />
+    <meta property="og:image" content="./images/favicon.png" />
+    <meta name="twitter:card"
+        content="Confira o Netflix Bookstore, a nova aposta da streaming para o segmento de Livraria Online" />
+    <meta name="twitter:title" content="Netflix Bookstore - livraria online" />
+    <meta name="twitter:description"
+        content="Confira o Netflix Bookstore, a nova aposta da streaming para o segmento de Livraria Online" />
+    <meta name="twitter:image" content="./images/favicon.png" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/output.css" />
+    <link rel="apple-touch-icon" href="./images/favicon.ico">
+    <link rel="manifest" href="./images/favicon.png">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Netflix</title>
+</head>
+
+<body role="document" class="flex flex-col bg-black">
+    <!-- Logo tipográfico do streaming Netflix -->
+    <header class="z-0 self-start p-3" role="heading">
+        <figure role="figure">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 309 83" fill="none" class="h-10"
+                alt="Logo tipográfico do streaming Netflix">
+                <path id="netflix-tipografy-svg" fill="#E50914" />
+            </svg>
+        </figure>
+    </header>
+    <!-- /Logo tipográfico do streaming Netflix -->
+
+    <main role="main" class="flex flex-col items-center justify-center space-y-4 lg:space-y-12 xl:space-y-12">
+        <section class="space-y-4 xl:space-y-12">
+            <h1 class="text-2xl text-center text-white netflix-sans lg:text-3xl xl:text-5xl">Who's watching ?</h1>
+            <ul role="list" class="grid grid-cols-3 lg:grid-cols-4 xl:flex" id="listUsers">
+                <li class="component"></li>
+                <li class="component"></li>
+                <li class="flex flex-col items-center p-2 cursor-pointer group" id="button-add-account">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" role="figure"
+                        class="h-16 transition-all duration-300 cursor-pointer select-none fill-account-primary group-hover:fill-gray-200 lg:h-24 xl:h-36">
+                        <path fill-rule="evenodd"
+                            d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <p
+                        class="p-2 text-sm text-center transition-all duration-300 text-account-primary group-hover:text-white lg:text-base xl:text-base">
+                        Add</p>
+                </li>
+        </section>
+        <button class="px-4 py-2 text-sm border text-account-primary lg:text-base">Manage Profiles</button>
+    </main>
+
+    <script src="./scripts/libs/jquery-3.7.1.min.js"></script>
+    <script type="module" src="./scripts/browse/dom.js"></script>
+    <script type="module" src="./scripts/browse/custom-svg.js"></script>
+    <script type="module" src="./scripts/browse/set-height.js"></script>
+    <script type="module" src="./scripts/browse/color-random.js"></script>
+    <script type="module" src="./scripts/browse/create-component.js"></script>
+    <script type="module" src="./scripts/browse/components.js"></script>
+    <script type="module" src="./scripts/browse/account-children.js"></script>
+    <script type="module" src="./scripts/browse/add-account.js"></script>
+</body>
+
+</html>
