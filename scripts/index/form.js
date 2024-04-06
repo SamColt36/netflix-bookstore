@@ -34,8 +34,8 @@ const checkContentLogin = function (input, notice) {
 
   function testNumber() {
     if (/^\d{11}$/.test(value)) {
-      removeErrorInput(input, notice);
       $(input).addClass("is-valid");
+      removeErrorInput(input, notice);
     } else {
       addErrorInput(input, notice);
       $(input).removeClass("is-valid");
@@ -75,7 +75,7 @@ const showHideButton = function (input, element) {
 };
 
 const allFieldsValidated = function (objLogin, objPassword, objSubmit) {
-  objLogin.hasClass("is-valid") && objPassword.hasClass("is-valid")
+  return objLogin.hasClass("is-valid") && objPassword.hasClass("is-valid")
     ? objSubmit.attr("disabled", false)
     : objSubmit.attr("disabled", true);
 };
@@ -84,5 +84,5 @@ export {
   checkContentLogin,
   checkContentPassword,
   showHideButton,
-  allFieldsValidated
+  allFieldsValidated,
 };

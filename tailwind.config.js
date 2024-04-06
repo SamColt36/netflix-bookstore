@@ -19,6 +19,7 @@ export const theme = {
       "var-secondary": "#000000", //black
       link: "#0080ff",
       "account-primary": "#4E6C80",
+      "browse-secondary": "#000000", // background
     },
   },
 };

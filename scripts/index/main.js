@@ -10,6 +10,7 @@ import {
   $noticeUser,
   $noticePassword,
 } from "./dom.js";
+
 import {
   checkContentLogin,
   checkContentPassword,
@@ -23,17 +24,14 @@ addLinks();
 $input_login.on("input", function (e) {
   checkContentLogin(this, $noticeUser);
   allFieldsValidated($(this), $input_password, $input_submit);
+
   e.preventDefault();
 });
 
 $input_password.on("input", function (e) {
   checkContentPassword(this, $noticePassword);
-  allFieldsValidated($(this), $input_password, $input_submit);
-  e.preventDefault();
-});
-
-$input_password.on("input", function (e) {
   showHideButton(this, $showView);
+  allFieldsValidated($input_login, $(this), $input_submit);
   e.preventDefault();
 });
 
@@ -49,6 +47,6 @@ $showView.on("click", function (e) {
 });
 
 $input_submit.click(function (e) {
-  window.location.href = "browse.html";
+  window.location.href = "https://github.com/SamColt36/netflix-bookstore";
   e.preventDefault();
 });
