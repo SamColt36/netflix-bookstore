@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Para navegadores baseados no Chromium */
 input[type="password"]::-ms-reveal,
 input[type="password"]::-ms-clear {

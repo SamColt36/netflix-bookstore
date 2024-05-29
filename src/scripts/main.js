@@ -1,5 +1,6 @@
 "use strict";
-
+import "../styles/styles.css";
+import $ from "jquery";
 import { readMore } from "./read-more.js";
 import { addLinks } from "./footer.js";
 import {

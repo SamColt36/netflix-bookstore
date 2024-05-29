@@ -1,4 +1,5 @@
 "use strict";
+import $ from "jquery";
 
 const $banner = $("#banner");
 const $listFooter = $("#listFooter");
@@ -26,5 +27,5 @@ export {
   $showView,
   $noticeUser,
   $noticePassword,
-  $input_submit
+  $input_submit,
 };

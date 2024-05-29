@@ -1,5 +1,5 @@
 "use strict";
-
+import $ from "jquery";
 import { $saibaMais, $information } from "./dom.js";
 
 const readMore = () => {

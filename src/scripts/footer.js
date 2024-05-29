@@ -1,5 +1,5 @@
 "use strict";
-
+import $ from "jquery";
 import { $listLinksFooter } from "./dom.js";
 
 const addLinks = () => {
@@ -10,7 +10,7 @@ const addLinks = () => {
     "https://help.netflix.com/legal/termsofuse",
     "https://help.netflix.com/legal/privacy",
     "https://www.netflix.com/br/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fbrowse#",
-    "https://help.netflix.com/legal/corpinfo"
+    "https://help.netflix.com/legal/corpinfo",
   ];
 
   $.each($listLinksFooter, function (i, valueOfElement) {
