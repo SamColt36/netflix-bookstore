@@ -45,7 +45,7 @@ O projeto encontra-se em:
 
 ## 🌐 Acessar o projeto
 
-Acesse a última versão disponível pelo [link]()🔗.
+Acesse a última versão disponível pelo [link](https://netflix-bookstore.vercel.app/)🔗.
 
 ## 📂 Estrutura de diretórios
 
